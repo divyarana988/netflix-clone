@@ -2,11 +2,17 @@ import React from 'react';
 import "./Banner.css";
 
 function Banner() {
+
+    function truncate(string, n) {
+        return string?.length > n ? string.substr(0, n - 1) + "..." : string;
+
+    }
+
     return (
         <header className="banner" style={{
             backgroundSize:"cover",
             backgroundImage : `url("https://i.pinimg.com/originals/ca/f0/45/caf04534b84c3081e3972c942ffda27e.jpg")`,
-            backgroungPosition : "center center",
+            backgroundPosition : "center center",
         }}>
 
             <div className="banner_container">
